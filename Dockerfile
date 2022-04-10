@@ -1,5 +1,5 @@
-FROM ubuntu:latest
+FROM bash:latest
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y openssl openjdk-17-jdk-headless
+RUN apk update && apk install -y openssl openjdk-17-jdk-headless
